@@ -1,51 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="5" failed="4" skipped="0">
+<testng-results ignored="0" total="9" passed="7" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-11T14:28:14 IST" name="Suite" finished-at="2026-10-11T14:28:44 IST" duration-ms="30218">
+  <suite started-at="2026-10-11T19:21:04 IST" name="Suite" finished-at="2026-10-11T19:21:44 IST" duration-ms="39764">
     <groups>
     </groups>
-    <test started-at="2026-10-11T14:28:14 IST" name="Test" finished-at="2026-10-11T14:28:44 IST" duration-ms="30218">
+    <test started-at="2026-10-11T19:21:04 IST" name="Test" finished-at="2026-10-11T19:21:44 IST" duration-ms="39764">
       <class name="testpkg.carttest">
-        <test-method signature="cartTest()[pri:0, instance:testpkg.carttest@2a5c8d3f]" started-at="2026-10-11T14:28:44 IST" name="cartTest" finished-at="2026-10-11T14:28:44 IST" duration-ms="349" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="cartTest()[pri:0, instance:testpkg.carttest@2a5c8d3f]" started-at="2026-10-11T19:21:33 IST" name="cartTest" finished-at="2026-10-11T19:21:36 IST" duration-ms="2965" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".shopping_cart_link"}
-  (Session info: chrome=155.0.8059.39)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.49.0', revision: 'bedb24f bedb24f6f703876e7e4c5d506f0d697eb358c720'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [507772de4622d92cd67273bec3362d26, findElement {value=shopping_cart_link, using=class name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.39, chrome: {chromedriverVersion: 155.0.8059.39 (3ff7ac5a9224..., userDataDir: C:\Users\Aswathy\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52481}, goog:processID: 21992, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52481/devtoo..., se:cdpVersion: 155.0.8059.39, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 507772de4622d92cd67273bec3362d26]]>
+              <![CDATA[Expected 6 products but found 0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".shopping_cart_link"}
-  (Session info: chrome=155.0.8059.39)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.49.0', revision: 'bedb24f bedb24f6f703876e7e4c5d506f0d697eb358c720'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [507772de4622d92cd67273bec3362d26, findElement {value=shopping_cart_link, using=class name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.39, chrome: {chromedriverVersion: 155.0.8059.39 (3ff7ac5a9224..., userDataDir: C:\Users\Aswathy\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52481}, goog:processID: 21992, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52481/devtoo..., se:cdpVersion: 155.0.8059.39, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 507772de4622d92cd67273bec3362d26
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:653)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:417)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:411)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at pagepkg.productpage.openCart(productpage.java:39)
-at testpkg.carttest.cartTest(carttest.java:35)
+              <![CDATA[java.lang.AssertionError: Expected 6 products but found 0
+at org.testng.Assert.fail(Assert.java:111)
+at testpkg.carttest.cartTest(carttest.java:64)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -74,17 +44,17 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cartTest -->
       </class> <!-- testpkg.carttest -->
       <class name="testpkg.logintest">
-        <test-method is-config="true" signature="browserlaunch()[pri:0, instance:testpkg.logintest@1ce24091]" started-at="2026-10-11T14:28:09 IST" name="browserlaunch" finished-at="2026-10-11T14:28:14 IST" duration-ms="5307" status="PASS">
+        <test-method is-config="true" signature="browserlaunch()[pri:0, instance:testpkg.logintest@1ce24091]" started-at="2026-10-11T19:20:59 IST" name="browserlaunch" finished-at="2026-10-11T19:21:04 IST" duration-ms="5234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserlaunch -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:testpkg.logintest@1ce24091]" started-at="2026-10-11T14:28:16 IST" name="login" data-provider="logindata" finished-at="2026-10-11T14:28:19 IST" duration-ms="3565" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:testpkg.logintest@1ce24091]" started-at="2026-10-11T19:21:06 IST" name="login" data-provider="logindata" finished-at="2026-10-11T19:21:09 IST" duration-ms="3583" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -100,7 +70,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:testpkg.logintest@1ce24091]" started-at="2026-10-11T14:28:19 IST" name="login" data-provider="logindata" finished-at="2026-10-11T14:28:23 IST" duration-ms="3658" status="FAIL">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:testpkg.logintest@1ce24091]" started-at="2026-10-11T19:21:09 IST" name="login" data-provider="logindata" finished-at="2026-10-11T19:21:13 IST" duration-ms="3714" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -153,7 +123,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:testpkg.logintest@1ce24091]" started-at="2026-10-11T14:28:23 IST" name="login" data-provider="logindata" finished-at="2026-10-11T14:28:27 IST" duration-ms="3491" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:testpkg.logintest@1ce24091]" started-at="2026-10-11T19:21:13 IST" name="login" data-provider="logindata" finished-at="2026-10-11T19:21:17 IST" duration-ms="3576" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -169,7 +139,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:testpkg.logintest@1ce24091]" started-at="2026-10-11T14:28:27 IST" name="login" data-provider="logindata" finished-at="2026-10-11T14:28:35 IST" duration-ms="8491" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:testpkg.logintest@1ce24091]" started-at="2026-10-11T19:21:17 IST" name="login" data-provider="logindata" finished-at="2026-10-11T19:21:25 IST" duration-ms="8584" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -185,7 +155,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:testpkg.logintest@1ce24091]" started-at="2026-10-11T14:28:35 IST" name="login" data-provider="logindata" finished-at="2026-10-11T14:28:39 IST" duration-ms="4183" status="FAIL">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:testpkg.logintest@1ce24091]" started-at="2026-10-11T19:21:25 IST" name="login" data-provider="logindata" finished-at="2026-10-11T19:21:29 IST" duration-ms="3574" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -198,47 +168,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Login failed for : error_user]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Login failed for : error_user
-at org.testng.Assert.fail(Assert.java:111)
-at testpkg.logintest.login(logintest.java:111)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:testpkg.logintest@1ce24091]" started-at="2026-10-11T14:28:39 IST" name="login" data-provider="logindata" finished-at="2026-10-11T14:28:43 IST" duration-ms="3485" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:testpkg.logintest@1ce24091]" started-at="2026-10-11T19:21:29 IST" name="login" data-provider="logindata" finished-at="2026-10-11T19:21:32 IST" duration-ms="3525" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -254,86 +187,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testpkg.logintest@1ce24091]" started-at="2026-10-11T14:28:44 IST" name="teardown" finished-at="2026-10-11T14:28:46 IST" duration-ms="1094" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testpkg.logintest@1ce24091]" started-at="2026-10-11T19:21:44 IST" name="teardown" finished-at="2026-10-11T19:21:45 IST" duration-ms="1292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testpkg.logintest -->
       <class name="testpkg.checkouttest">
-        <test-method signature="checkoutTest()[pri:0, instance:testpkg.checkouttest@752325ad]" started-at="2026-10-11T14:28:44 IST" name="checkoutTest" finished-at="2026-10-11T14:28:44 IST" duration-ms="346" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".shopping_cart_link"}
-  (Session info: chrome=155.0.8059.39)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.49.0', revision: 'bedb24f bedb24f6f703876e7e4c5d506f0d697eb358c720'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [507772de4622d92cd67273bec3362d26, findElement {value=shopping_cart_link, using=class name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.39, chrome: {chromedriverVersion: 155.0.8059.39 (3ff7ac5a9224..., userDataDir: C:\Users\Aswathy\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52481}, goog:processID: 21992, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52481/devtoo..., se:cdpVersion: 155.0.8059.39, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 507772de4622d92cd67273bec3362d26]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".shopping_cart_link"}
-  (Session info: chrome=155.0.8059.39)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.49.0', revision: 'bedb24f bedb24f6f703876e7e4c5d506f0d697eb358c720'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [507772de4622d92cd67273bec3362d26, findElement {value=shopping_cart_link, using=class name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.39, chrome: {chromedriverVersion: 155.0.8059.39 (3ff7ac5a9224..., userDataDir: C:\Users\Aswathy\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52481}, goog:processID: 21992, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52481/devtoo..., se:cdpVersion: 155.0.8059.39, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 507772de4622d92cd67273bec3362d26
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:653)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:417)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:411)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at pagepkg.productpage.openCart(productpage.java:39)
-at testpkg.checkouttest.checkoutTest(checkouttest.java:38)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="checkoutTest()[pri:0, instance:testpkg.checkouttest@752325ad]" started-at="2026-10-11T19:21:36 IST" name="checkoutTest" finished-at="2026-10-11T19:21:44 IST" duration-ms="7757" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkoutTest -->
       </class> <!-- testpkg.checkouttest -->
       <class name="testpkg.producttest">
-        <test-method signature="addAllProducts()[pri:0, instance:testpkg.producttest@3a52dba3]" started-at="2026-10-11T14:28:43 IST" name="addAllProducts" finished-at="2026-10-11T14:28:44 IST" duration-ms="1007" status="PASS">
+        <test-method signature="addAllProducts()[pri:0, instance:testpkg.producttest@3a52dba3]" started-at="2026-10-11T19:21:32 IST" name="addAllProducts" finished-at="2026-10-11T19:21:33 IST" duration-ms="860" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addAllProducts -->

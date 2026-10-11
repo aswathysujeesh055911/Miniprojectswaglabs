@@ -3,17 +3,10 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testpkg.checkouttest">
-        <methods>
-          <include name="teardown"/>
-          <include name="checkoutTest"/>
-          <include name="browserlaunch"/>
-        </methods>
-      </class> <!-- testpkg.checkouttest -->
       <class name="testpkg.logintest">
         <methods>
           <include name="teardown"/>
-          <include name="login" invocation-numbers="1 4"/>
+          <include name="login" invocation-numbers="1"/>
           <include name="browserlaunch"/>
         </methods>
       </class> <!-- testpkg.logintest -->

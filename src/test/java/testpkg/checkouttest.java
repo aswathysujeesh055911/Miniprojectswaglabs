@@ -71,6 +71,7 @@ public class checkouttest extends baseclass{
         // CLICK CHECKOUT
         cart.clickCheckout();
         
+        Thread.sleep(2000);
 
         String currentUrl = driver.getCurrentUrl();
 

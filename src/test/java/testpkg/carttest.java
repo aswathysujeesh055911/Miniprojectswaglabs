@@ -33,7 +33,7 @@ public class carttest extends baseclass {
 
         // OPEN CART
         product.openCart();
-        Thread.sleep(1000);
+        
         
         test.pass("Cart opened successfully");
 
